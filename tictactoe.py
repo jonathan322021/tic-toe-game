@@ -67,8 +67,8 @@ def pc_choosing_position(position_list):
         Generating random_numbers
         """
         max_ind=len(position_list)
-        pc_choose=random.randint(0,max_ind-1)
         while True:
+            pc_choose=random.randint(0,max_ind-1)
             if position_list[pc_choose]!="":
                 return position_list[pc_choose]
 
