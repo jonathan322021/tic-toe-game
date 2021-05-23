@@ -19,7 +19,6 @@ class Game:
         Print the table to the fscreen
 
         """
-        
         print("welcome to tic toe")
         print(self.table['top-left']+"     |       "+self.table["top-middle"]+"      |    "+self.table['top-right'])
         print("-----------------------")
@@ -27,17 +26,12 @@ class Game:
         print("-----------------------")
         print(self.table['button-left']+"     |        "+self.table["button-middle"]+"     |   "+self.table["button-right"])
 
-
-   
     def printing_Val(self,val):
         if self.simbol==val:
             print(self.player+" won!!")
         else:
             print("PC wont")
         return "finish"
-
-    
-        
 #winning
     def checkingwinner(self):
       """
@@ -59,11 +53,6 @@ class Game:
       if  (self.table['top-right']==self.table["center"])&(self.table["center"]==self.table["button-left"]):
             return self.table['top-left']
             
-       
-    
-     
-        
-
 def playing_with_Pc(gameInfo):
     """
     PC will play with the player
@@ -82,10 +71,6 @@ def pc_choosing_position(position_list):
         while True:
             if position_list[pc_choose]!="":
                 return position_list[pc_choose]
-
-
-
-    
 
 def start_Game():
     """
@@ -111,7 +96,6 @@ def start_Game():
        game.table[pc_choosing_position(position_1)]=playing_with_Pc(game)
        game.print_Table()
        
-       
     #creating game
     while True :
         value_forpc=pc_choosing_position(position_1)
@@ -126,7 +110,6 @@ def start_Game():
             print(game.checkingwinner())
         counter=+1
             
-
 print("Wlcome to tic-toe-game")
 print("")
 print("top-left        |       top-middle        |      top-right")
@@ -135,10 +118,6 @@ print("middle-left     +       center            +      middle-right")
 print("-----------------------------------------------------------------")
 print("button-left     |        button-middle    |      button-right")
 print("")
-start_Game()
-
-
-
 
 
       
